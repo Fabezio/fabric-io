@@ -1,0 +1,48 @@
+// import PortfolioService from '@/services/PortfolioService.js'
+
+ export const portfolio= [
+    {
+      id: '1',
+      url: 'travelagency-mod.netlify.app',
+      img: 'https://travelagencyfabezio.netlify.app/Images/view.png',
+      banner: 'https://travelagencyfabezio.netlify.app/Images/view.png',
+      mod: 'voyage',
+      slug: 'travel-agency',
+      alt: 'travel agency',
+      name: 'Travel Agency',
+      desc: 'Premier site en HTML / CSS',
+    },
+    {
+      id: '2',
+      url: 'snakeey.netlify.app',
+      img: 'https://snakeey.netlify.app/img/view.png',
+      banner: 'https://snakeey.netlify.app/img/view.png',
+      slug: 'snakeey',
+      mod: 'snakeey',
+      alt: 'snakeey',
+      name: 'Snakeey',
+      desc: 'Version JS de Snake',
+    },
+    {
+      id: '3',
+      url: 'topactrices.netlify.app',
+      img: 'https://topactrices.netlify.app/img/color-image.jpg',
+      banner: 'https://topactrices.netlify.app/img/color-image.jpg',
+      alt: 'top 5 actrices',
+      mod: 'actrices',
+      slug: 'actrices',
+      name: 'Top 5 Actrices',
+      desc: 'Site en jQuery',
+    },
+    {
+      id: '4',
+      url: 'do-pe.netlify.app',
+      img: 'https://do-pe.netlify.app/img/banner.jpg',
+      banner: 'https://do-pe.netlify.app/img/banner.jpg',
+      alt: 'do-pe',
+      mod: 'dope',
+      slug: 'dope',
+      name: 'Do-Pe',
+      desc: 'Site en VueJS 2',
+    },
+  ]
