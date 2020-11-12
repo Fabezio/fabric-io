@@ -11,7 +11,9 @@
 
 <script>
   import HeadTitle from "../../components/UI/HeadTitle.svelte";
+  import Card from "../../components/UI/Card.svelte";
   export let portfolio;
+  const max = 3;
   // const portfolio = [
   //   {
   //     id: "1",
@@ -56,45 +58,42 @@
   // ];
 </script>
 
-<style>
-  img {
-    max-width: 400px;
-    max-height: 300px;
-  }
-</style>
 
-<div>
-  <HeadTitle title="Portfolio" />
-  <!-- <h1 class="text-center mb-4">Portfolio</h1> -->
-  <h2 class="text-center mb-3">Sites créés en formation:</h2>
-  <!-- <div class="flex mb-4 flex-wrap justify-center"> -->
-  <div class="row">
-    {#each portfolio as folio}
-      <div class=" col-lg-4 col-md-6 col-sm-12">
-        <div class="card text-center m-3 p-0">
-          <div class="card-header">
-            <img class="card-top-img" src={folio.banner} alt={folio.alt} />
-            <div class="card-body">
-              <div class="card-text">{folio.name}</div>
-            </div>
-          </div>
-          <div class="card-footer p-0">
-            <div class="btn-group btn-block">
-              <!-- <button class="btn btn-outline-info "> -->
-                <a class="btn btn-outline-info " href="portfolio/{folio.slug} "> détail </a>
-              <!-- </button> -->
-              <!-- <button class="btn btn-info"> -->
-                <a
-                class="btn btn-info" href="https://{folio.url}"
-                  target="_blank">visiter</a>
-                <!-- </button> -->
-            </div>
-            <!--             
-          </div> -->
-          </div>
-        </div>
-      </div>
-    {/each}
-  </div>
-  <!-- </div> -->
-</div>
+<!-- <div> -->
+<HeadTitle title="Portfolio" />
+<!-- {#if portfolio} -->
+<!-- <h1 class="text-center mb-4">Portfolio</h1> -->
+<!-- {#for i in portfolio} -->
+<h2 class="text-center mb-3">Sites réalisés:</h2>
+<div class="row">
+{#each portfolio as folio, i}
+    {#if folio.mode=="self"}
+      <Card item={folio} />
+      {/if}
+      {/each}
+    </div>
+
+<!-- <h2 class="text-center mb-3">Sites réalisés:</h2> -->
+<h2 class="text-center mb-3">Sites créés en formation:</h2>
+<div class="row">
+{#each portfolio as folio, i}
+{#if folio.mode === "tuto"}
+      <Card item={folio} />
+      {/if}
+      {/each}
+    </div>
+<!-- {:else} -->
+<!-- <div class="row">
+  <Card item={folio} />
+</div> -->
+<!-- {/each} -->
+
+<!-- <div class="flex mb-4 flex-wrap justify-center"> -->
+<!-- <div class="row"> -->
+
+<!-- {#each portfolio as folio} -->
+<!-- <Card item={folio} /> -->
+<!-- {/for} -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->

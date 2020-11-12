@@ -17,6 +17,6 @@
 
 <Nav {segment}/>
 
-<main>
+<main class="container">
 	<slot></slot>
 </main>

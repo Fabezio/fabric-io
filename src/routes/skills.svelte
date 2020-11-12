@@ -203,14 +203,14 @@
 <div>
   <h1 class="text-center">Compétences</h1>
   <h2 class="uppercase">Savoir-faire</h2>
-  <ul>
-    <li>structure, mise en forme</li>
-    <li>dynamisation</li>
-    <li>mise en place base de données</li>
-    <li>maintenance</li>
+  <ul class="d-flex " > 
+    <li class="mr-4">structure, mise en forme</li>
+    <li class="mr-4">dynamisation</li>
+    <li class="mr-4">mise en place base de données</li>
+    <li class="mr-4">maintenance</li>
   </ul>
   <h2 class="pb-5 uppercase">Acquis</h2>
-  <SkillStack class="skill-stack" {codes}>
+  <SkillStack class="skill-stack" {codes} />
     <!--template(v-slot:activator='{on}')
     div(v-for='(code) in codes', :key='code.title')
       ul.flex
@@ -232,5 +232,5 @@
             p.font-light.text-gray-500.text-left version: {card.version}
       .shrink-0.justify-center
     -->
-  </SkillStack>
+  <!-- </SkillStack> -->
 </div>

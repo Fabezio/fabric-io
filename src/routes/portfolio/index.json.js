@@ -7,6 +7,7 @@ const contents = JSON.stringify(portfolio.map(folio => {
 		// slug: folio.slug
 		// id: '1',
 		url: folio.url,
+		mode: folio.mode,
 		img: folio.img,
 		banner: folio.banner,
 		mod: folio.mod,

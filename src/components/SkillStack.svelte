@@ -10,19 +10,20 @@
   -->
 
   {#each codes as code}
-    <h2 class="font-light">{code.title}</h2>
+    <h3 class="mt-4">{code.title}</h3>
     {#each code.content as card}
+
       <div
-        class="main border rounded m-3 flex flex-col flex-grow {card.name === !code.title.name ? '&quot;hidden&quot;' : '&quot;block&quot;'}"
+        class="card my-3 {card.name === !code.title.name ? '&quot;hidden&quot;' : '&quot;block&quot;'}"
         id="code.title">
-        <div class="flex">
+        <div class="d-flex">
           <div class="thumbnail">
-            <img class="block" rounded="rounded" src="card.img" alt="" />
+            <img class="block" rounded="rounded" src="{card.img}" alt="" />
           </div>
           <div class="flex-col w-full mx-3 pl-2">
             <h3>{card.name}</h3>
             <p class="font-light text-left">{card.desc}</p>
-            <p class="version font-light text-gray-500 text-left">
+            <p class="text-muted version font-light text-gray-500 text-left">
               version:
               {card.version}
             </p>
@@ -33,3 +34,10 @@
     <!-- </h2> -->
   {/each}
 </div>
+
+<style>
+  img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+</style>

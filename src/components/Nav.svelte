@@ -49,11 +49,11 @@
   }
 </style>
 
-<nav>
+<nav class="navbar navbar-nav bg-info navbar-dark">
   <ul>
     <!-- <li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Accueil</a></li> -->
     {#each navbarLinks as link}
-		<li>
+		<li class="nav-item">
       {#if link.prefetch}
           <a
             rel="prefetch"
