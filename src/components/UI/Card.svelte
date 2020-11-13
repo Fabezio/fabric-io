@@ -21,7 +21,7 @@
     <div class="card-footer p-0">
       <div class="btn-group btn-block">
         <!-- <button class="btn btn-outline-info "> -->
-          <a class="btn btn-outline-info " href="portitem/{item.slug} "> détail </a>
+          <a class="btn btn-outline-info " href="portfolio/{item.slug} "> détail </a>
         <!-- </button> -->
         <!-- <button class="btn btn-info"> -->
           <a

@@ -21,7 +21,7 @@ export async function preload({ params }) {
 
 <style>
 	img {
-		max-width: 640px;
+		width: 100%;
 	}
 </style>
 
@@ -29,17 +29,17 @@ export async function preload({ params }) {
 <!-- <div class="container"> -->
 	<HeadTitle title={folio.name} />
 	<!-- <h1 class="text-center mb-4">{folio.name}</h1> -->
-	<div class="row py-4">
-		<div class="col-md-6 col-sm-12">
+	<!-- <div class="row py-4">
+		<div class="col-md-6 col-sm-12"> -->
 			<img src="{folio.img}" alt="{folio.alt}"  />
 			
-		</div>
-		<div class="col-md-6 col-sm-12">
-			<h3 class="pl-3">{folio.desc}</h3>
+		<!-- </div>
+		<div class="col-md-6 col-sm-12"> -->
+			<p class="text-muted float-right pl-3">{folio.desc}</p>
 
-		</div>
+		<!-- </div> -->
 
-	</div>
+	<!-- </div> -->
   <!-- <div class="flex items-center mx-auto">
     <div>
 		</div>

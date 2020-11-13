@@ -1,8 +1,6 @@
-<svelte:head>
-	<title>About</title>
-</svelte:head>
+<HeadTitle title="A propos de l'auteur" /> 
 <div class="px-20" id="author">
-  <h1 class="title text-center">Qui je suis</h1>
+  <!-- <h1 class="title text-center">Qui je suis</h1> -->
   <article class="text-justified mx-2 lg:mx-0">
     <p>Je suis Fabezio, développeur Web orienté Javascript, plus exactement un codeur Javascript orienté web, orienté Svelte/Sapper.</p>
     <h2 class="subtitle text-center mt-4">Un peu d'histoire</h2>
@@ -24,3 +22,7 @@
     </p>
   </article>
 </div>
+
+<script>
+  import HeadTitle from "../components/UI/HeadTitle.svelte";
+</script>

@@ -1,5 +1,4 @@
-export const state = () => ({
-  socialNetworks: [
+export const socialNetworks= [
     {
       id: 1,
       label: 'github',
@@ -20,5 +19,5 @@ export const state = () => ({
       logo:
         'https://digitalneed.fr/wp-content/uploads/2017/05/Comment_cr%C3%A9er_et_optimiser_une_Page_Entreprise.png',
     },
-  ],
-})
+  ]
+// })

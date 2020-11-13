@@ -1,5 +1,7 @@
 <script>
+  // import { link } from "fs";
   import { navbarLinks } from "../store/links";
+  import Clock from "./Clock.svelte";
   export let segment;
 </script>
 
@@ -27,7 +29,7 @@
     float: left;
   }
 
-  [aria-current] {
+  /* [aria-current] {
     position: relative;
     display: inline-block;
   }
@@ -40,7 +42,7 @@
     background-color: rgb(255, 62, 0);
     display: block;
     bottom: -1px;
-  }
+  } */
 
   a {
     text-decoration: none;
@@ -49,28 +51,49 @@
   }
 </style>
 
-<nav class="navbar navbar-nav bg-info navbar-dark">
-  <ul>
-    <!-- <li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Accueil</a></li> -->
-    {#each navbarLinks as link}
-		<li class="nav-item">
-      {#if link.prefetch}
-          <a
-            rel="prefetch"
-            aria-current={segment === '{link.route}' ? 'page' : undefined}
-            href={link.route}>{link.name}</a>
-        <!-- </li> -->
-      {:else}
-        <!-- <li> -->
-          <a
-            aria-current={segment === '{link.route}' ? 'page' : undefined}
-            href={link.route}>{link.name}</a>
-						{/if}
-					</li>
-    {/each}
+<nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-lg">
+  <a class="navbar-brand" href=".">Fabric.io</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" />
+  </button>
 
-    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-    <!-- <li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li> -->
-  </ul>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ">
+      <!-- <li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Accueil</a></li> -->
+      {#each navbarLinks as link}
+        <li
+          class="nav-item text-uppercase font-weight-light {segment === link.route || (segment == undefined && link.route == '') ? 'active' : ''}">
+          {#if link.prefetch}
+            <a
+              class="nav-link "
+              rel="prefetch"
+              href={link.route}>{link.name}</a>
+            <!-- </li> -->
+          {:else}
+            <!-- <li> -->
+            <a class="nav-link  " href={link.route}>{link.name}</a>
+          {/if}
+        </li>
+      {/each}
+      <!-- <li>{segment}</li> -->
+
+      
+    </ul>
+    
+    <div>
+      <Clock />
+
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
 </nav>

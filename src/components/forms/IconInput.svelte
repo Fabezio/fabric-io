@@ -1,0 +1,31 @@
+
+<div class="my-4 flex items-center border rounded"><span class="text-gray-800 mx-3" :class="prependIcon"></span>
+  <input class="outlined h-12 p-3" :class="width" :placeholder="label" :type="type" required="required" /><span :class="appendIcon"></span>
+</div>
+
+<script>
+// export default {
+//   props: {
+//     width: {
+//       type: String,
+//       default: 'w-full',
+//     },
+//     label: {
+//       type: String,
+//       default: 'name',
+//     },
+//     type: {
+//       type: String,
+//       default: 'text',
+//     },
+//     prependIcon: {
+//       type: String,
+//       default: 'far fa-user',
+//     },
+//     appendIcon: {
+//       type: String,
+//       default: '',
+//     },
+//   },
+// }
+</script>

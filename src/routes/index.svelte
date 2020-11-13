@@ -27,8 +27,12 @@
 
   img {
     width: 100%;
-    max-width: 400px;
-    margin: 0 0 1em 0;
+    /* margin: 0 0 1em 0; */
+  }
+  #logo {
+    max-width: 200px;
+    max-height: 200px;
+
   }
 
   /* p {
@@ -42,33 +46,35 @@
   }
 </style>
 
-<HeadTitle title="Accueil" />
+<img
+class="banner "
+width="100%"
+src="img/bannière_métal_luisant.png"
+alt="bannière" />
 
 <div>
-	<!-- svelte-ignore a11y-img-redundant-alt -->
-  <img
-    class="banner w-full h-auto"
-    src="img/bannière_métal_luisant.png"
-    alt="bannière" />
-  <div class="border rounded-b-lg lg:max-w-full md:w-11/12 md:mx-auto lg:flex">
+  <!-- svelte-ignore a11y-img-redundant-alt -->
+  <div class="border  d-flex">
     <!-- svelte-ignore a11y-img-redundant-alt -->
     <img
-      class="w-auto rounded-b-lg hidden lg:block "
-      src={idpict}
-      alt="photo de l'auteur" />
+    id="logo"
+    class="w-auto rounded-lg rounded-bl   "
+    src={idpict}
+    alt="photo de l'auteur" />
     <div
-      class="bg-white rounded-b p-4 flex flex-col justify-around leading-normal lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
-      <div class="flex flex-col">
-        <h1 class="my-0 text-left text-center lg:text-left">fabezio.org</h1>
-        <h2 class="my-0 text-center lg:text-left">
-          Développeur Web FrontEnd spécialisé JS
-        </h2>
-        <p class="mt-2 text-xl">Je code pour vous</p>
-      </div>
+    class="bg-white rounded-b p-4 flex flex-col justify-around leading-normal lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
+    <div class="flex flex-col">
+      <h1 class="my-0 text-left ">fabezio.org</h1>
+      <h2 class="my-0 text-center lg:text-left">
+        Développeur Web FrontEnd spécialisé JS
+      </h2>
+      <p class="mt-2 text-xl">Je code pour vous</p>
     </div>
   </div>
-  <div class="my-auto px-20">
-    <h2 class="p-5 text-center">Bienvenue sur ce site!</h2>
+</div>
+<div class="my-auto px-20">
+  <HeadTitle title="Bienvenue! sur ce site!" />
+    <!-- <h2 class="p-5 text-center">Bienvenue sur ce site!</h2> -->
     <main class="mx-2 lg:mx-0">
       <p>
         Si vous êtes ici, c'est que vous avez besoin d'un développeur web, en

@@ -1,4 +1,5 @@
 <script>
+  import HeadTitle from "../../components/UI/HeadTitle.svelte";
 const web= 'fabezio.fr'
 const editor= 'fabezio'
 const society= 'MWASTERS'
@@ -8,7 +9,7 @@ const space= '&nbsp;'
 </script>
 
 <div id="cgu">
-  <h1 class="text-center">Conditions générales d'utilisation</h1>
+  <HeadTitle title="Conditions générales d'utilisation" />
   <article class="text-justify">
     <p>Le présent document a pour objet de définir les modalités et conditions dans lesquelles d’une part, l’association<span class="society">{society}</span>, ci-après dénommé<span class="society">{society}</span>, met à la disposition de ses utilisateurs le site, et les services disponibles sur le site et d’autre part, la manière par laquelle l’utilisateur accède au site et utilise ses services.</p>
     <p>
@@ -18,7 +19,7 @@ const space= '&nbsp;'
   <article class="text-justify">
     <p>Aucune reproduction, même partielle prévue à l’article L.122-5 du Code de la propriété intellectuelle, ne peut être faite de ce site sans l’autorisation du directeur de publication.</p>
   </article>
-  <h3 class="subtitle is-3">Liens hypertextes</h3>ƒ
+  <h3 class="subtitle is-3">Liens hypertextes</h3>
   <article class="text-justify">
     <p>Le site<span class="web text-lowercase" v-html="space">{web}</span> peut contenir des liens hypertextes vers d’autres sites présents sur le Il est possible de créer un lien vers la page de présentation de ce site sans autorisation expresse de<span class="society" v-html="space">{society}</span>. Aucune autorisation ou demande d’information préalable ne peut être exigée par<span class="editor text-lowercase" v-html="space">{editor}<span v-html="trade"></span></span> à l’égard d’un site qui souhaite établir un lien vers le site de<span class="editor text-lowercase" v-html="space">{editor}<span v-html="trade"></span></span>. Il convient toutefois d’afficher ce site dans une nouvelle fenêtre du navigateur. Cependant,<span class="society" v-html="space">{society}</span> se réserve le droit de demander la suppression d’un lien qu’il estime non conforme à l’objet du site<span class="web text-lowercase" v-html="space">{web}</span></p>
     <p></p>

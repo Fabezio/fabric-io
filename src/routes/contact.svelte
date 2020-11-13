@@ -1,4 +1,11 @@
 <script>
+  import HeadTitle from "../components/UI/HeadTitle.svelte";
+  import IconInput from "../components/forms/IconInput.svelte";
+  import IconTextarea from "../components/forms/IconTextarea.svelte";
+  import ActionButton from "../components/forms/ActionButton.svelte";
+  import SubmitButton from "../components/forms/SubmitButton.svelte";
+  import CheckBox from "../components/forms/CheckBox.svelte";
+
   const mailForm =  []
   const errors =  []
 let  email =  null
@@ -22,6 +29,8 @@ function checkForm(e) {
 </script>
 
 <div class="mx-auto pa-3 md:w-4/12 text-center">
+  <HeadTitle title="Formulaire de contact" />
+
   <h1 class="pb-6 text-center">Contactez-moi</h1>
   <!--a(href='mailto:fabezio@outlook.fr')
   //ActionButton()
@@ -29,7 +38,7 @@ function checkForm(e) {
   //button.btn.btn-purple.text-white.mx-auto.block Envoyer un message
   
   -->
-  <form  on:submit.preventDefault="{checkForm}">
+  <form  on:submit.preventDefault="{checkForm(e)}">
     <!--IconInput(width='w-full' label='Nom: ' prependIcon='fas fa-users' appendIcon='' v-model='name' )-->
     <!--p() {name}-->
     <!--p.text-red-500(v-if='!lastname') veuillez entrer votre nom-->

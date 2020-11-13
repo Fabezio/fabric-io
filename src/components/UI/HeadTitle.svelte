@@ -11,7 +11,7 @@
 <svelte:head>
   <title>{name} | {title} </title>
 </svelte:head>
-<div class="text-center">
+<div class="text-center mt-5 mb-4">
   <h1>{title}</h1>
   
   {#if subtitle}

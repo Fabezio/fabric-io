@@ -1,3 +1,8 @@
 <div>
-  <h1 class="title text-center">Foire aux Questions</h1>
+  <HeadTitle title="Foire aux Questions" />
 </div>
+
+
+<script>
+  import HeadTitle from "../../components/UI/HeadTitle.svelte";
+  </script>
