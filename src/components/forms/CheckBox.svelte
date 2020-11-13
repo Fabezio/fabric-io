@@ -1,8 +1,11 @@
-<div class="flex center-items">
-  <input class="mr-2" id="checkbox" type="checkbox" v-model="checkbox" required="required" />
-  <label class="text-justify" v-model="checkbox">{iSwear}</label>
+<div class="flex center-items my-3">
+  <label class="text-justify" v-model="checkbox">
+  <input class="mr-2" id="checkbox" on:click={() => dispatch("check")} type="checkbox"   />
+    {iSwear}</label>
 </div>
 
 <script>
-  const iSwear ="je jure que c'est vrai, la vérté si j'mens"
+	import { createEventDispatcher } from 'svelte';
+  export let iSwear ="Je certifie que les données ci-jointes sont exactes"
+  const dispatch = createEventDispatcher();
 </script>

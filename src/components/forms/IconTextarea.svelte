@@ -1,5 +1,5 @@
 <div class="my-4 flex items-center border rounded outlined"><span class="text-gray-800 mx-3" :class="prependIcon"></span>
-  <textarea class="p-3" :class="width" :placeholder="label" :type="type" rows="2" required="required"></textarea><span :class="appendIcon"></span>
+  <textarea class="p-3" :class="width" :placeholder="label" :type="type" rows="2" ></textarea><span :class="appendIcon"></span>
 </div>
 
 
