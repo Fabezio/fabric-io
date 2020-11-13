@@ -1,27 +1,11 @@
-<button class="btn btn-info h-12"><span class="fas fa-paper-plane"></span>
-  <input class="btn-info uppercase font-bold" type="submit" :value="text" />
-</button>
-
 <script>
-// export default {
-//   props: {
-//     text: {
-//       type: String,
-//       default: 'Envoyer',
-//     },
-//     color: {
-//       type: String,
-//       default: 'btn-info',
-//     },
-//     icon: {
-//       type: String,
-//       default: 'fas fa-plus',
-//     },
-//     action: {
-//       type: String,
-//       default: '',
-//     },
-//   },
-// }
+  import { createEventDispatcher } from "svelte";
+  const dispatch = createEventDispatcher();
+
 </script>
 
+<!-- <button class="btn btn-info h-12"><span class="fas fa-paper-plane"></span> -->
+<button
+  class="btn rounded btn-outline-info uppercase on:click={() => dispatch('sendmail')} font-bold"
+  type="submit">envoyer
+</button>

@@ -51,7 +51,7 @@
   }
 </style>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-lg">
+<nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-lg sticky-top">
   <a class="navbar-brand" href=".">Fabric.io</a>
   <button
     class="navbar-toggler"
