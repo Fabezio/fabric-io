@@ -1,8 +1,8 @@
 <script>
   import HeadTitle from "../../components/UI/HeadTitle.svelte";
-const web= 'fabezio.fr'
-const editor= 'fabezio'
-const society= 'MWASTERS'
+const web= 'fabric-io.netlify.ap'
+const editor= 'fabric-io'
+const society= 'fabric-io'
 const email= 'fabezio@outlook.fr'
 const trade= '&trade;'
 const space= '&nbsp;'

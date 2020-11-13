@@ -64,7 +64,7 @@ alt="bannière" />
     <div
     class="bg-white rounded-b p-4 flex flex-col justify-around leading-normal lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
     <div class="flex flex-col">
-      <h1 class="my-0 text-left ">fabezio.org</h1>
+      <h1 class="my-0 text-left ">fabric-io</h1>
       <h2 class="my-0 text-center lg:text-left">
         Développeur Web FrontEnd spécialisé JS
       </h2>
