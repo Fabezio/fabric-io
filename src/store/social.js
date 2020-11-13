@@ -19,5 +19,12 @@ export const socialNetworks= [
       logo:
         'https://digitalneed.fr/wp-content/uploads/2017/05/Comment_cr%C3%A9er_et_optimiser_une_Page_Entreprise.png',
     },
+    {
+      id: 4,
+      label: 'facebook',
+      url: 'https://www.facebook.com/fabrice.riquet.735/',
+      logo:
+        'https://upload.wikimedia.org/wikipedia/commons/c/c2/Facebook_icon_192.png',
+    },
   ]
 // })
