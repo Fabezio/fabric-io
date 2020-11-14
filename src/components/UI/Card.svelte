@@ -5,15 +5,18 @@
 
 <style>
   img {
-    max-width: 400px;
-    max-height: 300px;
+    max-width: 300px;
+    max-height: 240px;
+  }
+  .card {
+    width: 340px ;
   }
 </style>
 
-<div class=" col-lg-4 col-md-12 col-sm-12">
-  <div class="card text-center m-3 p-0">
-    <div class="card-header">
-      <img class="card-top-img" src={item.banner} alt={item.alt} />
+<div class=" col-lg-4 col-md-12 col-sm-12 text-center">
+  <div class="card  m-3 py-0 ">
+    <div class="card-header px-auto">
+      <img class="card-top-img rounded-lg" src={item.banner} alt={item.alt} />
       <div class="card-body">
         <div class="card-text">{item.name}</div>
       </div>
