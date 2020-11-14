@@ -73,7 +73,7 @@ alt="bannière" />
   </div>
 </div>
 <div class="my-auto px-20">
-  <HeadTitle title="Bienvenue! sur ce site!" />
+  <HeadTitle title="Bienvenue sur ce site!" />
     <!-- <h2 class="p-5 text-center">Bienvenue sur ce site!</h2> -->
     <main class="mx-2 lg:mx-0">
       <p>
@@ -86,11 +86,11 @@ alt="bannière" />
       <p>
         Je vous invite donc à prendre le temps de visiter ce site et consulter
         <a
-          class="text-purple-600"
-          href="https://github.com/Fabezio/fabezio_nuxt"
+          class=""
+          href="https://github.com/Fabezio/fabric-io"
           target="_blank">ma page github</a>, afin de vous forger votre propre
         avis. N'hésitez pas à tester plus avant mes acquis, me faire un retour
-        <a class="text-purple-600" href="mailto:fabezio@outlook.fr">par mail</a>
+        <a class="" href="mailto:fabezio@outlook.fr">par mail</a>
         et/ou émettre des suggestions (c'est grâce aux erreurs qu'on apprend et
         progresse).
       </p>
