@@ -73,7 +73,7 @@ alt="bannière" />
   </div>
 </div>
 <div class="my-auto px-20">
-  <HeadTitle title="Bienvenue sur ce site!" />
+  <HeadTitle title="Accueil" subtitle="Bienvenue sur ce site!" />
     <!-- <h2 class="p-5 text-center">Bienvenue sur ce site!</h2> -->
     <main class="mx-2 lg:mx-0">
       <p>

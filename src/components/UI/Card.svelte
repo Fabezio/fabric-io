@@ -10,7 +10,7 @@
   }
 </style>
 
-<div class=" col-lg-4 col-md-6 col-sm-12">
+<div class=" col-lg-4 col-md-12 col-sm-12">
   <div class="card text-center m-3 p-0">
     <div class="card-header">
       <img class="card-top-img" src={item.banner} alt={item.alt} />

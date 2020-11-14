@@ -83,6 +83,7 @@
       <!-- <li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Accueil</a></li> -->
       {#each navbarLinks as link}
         <li
+        on:click={() => {open = false}}
           class="nav-item text-uppercase font-weight-light {segment === link.route || (segment == undefined && link.route == '') ? 'active' : ''}">
           {#if link.prefetch}
             <a

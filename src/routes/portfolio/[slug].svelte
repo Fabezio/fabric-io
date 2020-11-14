@@ -35,7 +35,11 @@ export async function preload({ params }) {
 			
 		<!-- </div>
 		<div class="col-md-6 col-sm-12"> -->
-			<p class="text-muted float-right pl-3">{folio.desc}</p>
+			<p class="text-muted pl-3">{folio.desc}</p><br>
+			<a class="btn btn-info btn-block" href="{folio.url}">visiter</a>
+				<!-- <div class="row">
+
+			</div> -->
 
 		<!-- </div> -->
 

@@ -26,7 +26,7 @@
   #margin {
     display: block;
     width: 100%;
-    height: 7rem;
+    height: 12rem;
   }
 </style>
 

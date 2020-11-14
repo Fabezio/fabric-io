@@ -1,11 +1,13 @@
 <script>
 	export let status;
 	export let error;
+	error.message = "Page non trouvée"
 
 	const dev = process.env.NODE_ENV === 'development';
 </script>
 
 <style>
+	
 	h1, p {
 		margin: 0 auto;
 	}
@@ -31,10 +33,19 @@
 	<title>{status}</title>
 </svelte:head>
 
-<h1>{status}</h1>
+<div class="jumbotron jumbotron-danger">
+	<h1>{status} - {error.message}</h1>
+	{#if dev && error.stack}
+		<pre>{error.stack}</pre>
+	{/if}
+	<!-- {error.length}
+	{#each error as err}
+		<span>{err}</span>
+	{/each} -->
 
-<p>{error.message}</p>
+</div>
 
-{#if dev && error.stack}
-	<pre>{error.stack}</pre>
-{/if}
+
+<div class="float-right">
+	<a href=".">retour à l'accueil</a>
+</div>
