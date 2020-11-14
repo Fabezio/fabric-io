@@ -65,7 +65,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-lg sticky-top">
   <a class="navbar-brand" href=".">Fabric.io</a>
-  <div>{open}</div>
+  <!-- <div>{open}</div> -->
   <button
     on:click={() => { open = !open}}
     class="navbar-toggler"
