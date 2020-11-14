@@ -2,6 +2,20 @@
   export let codes;
 </script>
 
+<style>
+  img {
+    max-width: 160px;
+    max-height: 160px;
+  }
+  .frame {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
 <div class="mx-auto w-75">
   <!--ul.flex
   li.mr-6(v-for='(code, i) in codes', :key='i')
@@ -12,13 +26,12 @@
   {#each codes as code}
     <h3 class="mt-4">{code.title}</h3>
     {#each code.content as card}
-
       <div
         class="card my-3 {card.name === !code.title.name ? '&quot;hidden&quot;' : '&quot;block&quot;'}"
         id="code.title">
         <div class="d-flex">
-          <div class="thumbnail">
-            <img class="block" rounded="rounded" src="{card.img}" alt="" />
+          <div class="frame">
+            <img class="block" rounded="rounded" src={card.img} alt="" />
           </div>
           <div class="flex-col w-full mx-3 pl-2">
             <h3>{card.name}</h3>
@@ -34,10 +47,3 @@
     <!-- </h2> -->
   {/each}
 </div>
-
-<style>
-  img {
-    max-width: 200px;
-    max-height: 200px;
-  }
-</style>

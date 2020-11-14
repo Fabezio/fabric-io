@@ -6,6 +6,18 @@
   import SubmitButton from "../components/forms/SubmitButton.svelte";
   import CheckBox from "../components/forms/CheckBox.svelte";
 
+  // const nodemailer = require("nodemailer");
+  const emitter = "fabezio@outlook.fr"
+  // let transporter = nodemailer.createTransport({
+  //   host: "gmail",
+  //   secure: false,
+  //   auth: {
+  //     user: emitter,
+  //     pass: "C0denCQRT",
+  //   },
+  // });
+  
+
   const mailForm = [];
   const errors = [];
   let email = null;
@@ -15,11 +27,10 @@
   let firstname = null;
   let lastname = null;
   let isChecked = false;
-  let maySendMail = false
+  let maySendMail = false;
 
   function resetForm() {
     return {
-
       email: null,
       message: "",
       societyName: null,
@@ -27,20 +38,23 @@
       firstname: null,
       lastname: null,
       isChecked: false,
-    }
+    };
   }
   function handleForm() {
-    if (email.length > 0) mailForm.push(email)
-    if (societyName.length > 0) mailForm.push(societyName)
-    if (societyUrl.length > 0) mailForm.push(societyUrl)
-    if (firstname.length > 0) mailForm.push(firstname)
-    if (lastname.length > 0) mailForm.push(lastname)
-    if (message.length> 0 ) mailForm.push(message)
-    
+    if (email.length > 0) mailForm.push(email);
+    if (societyName.length > 0) mailForm.push(societyName);
+    if (societyUrl.length > 0) mailForm.push(societyUrl);
+    if (firstname.length > 0) mailForm.push(firstname);
+    if (lastname.length > 0) mailForm.push(lastname);
+    if (message.length > 0) mailForm.push(message);
   }
-  
-  $: if (isChecked == true && errors.length == 0) maySendMail = true
-
+  // let info = transporter.sendMail({
+  //   from: `fabric-io <${emitter}>`,
+  //   to: `${firstname} ${firstname} <${email}> `,
+  //   subject: "demande",
+  //   text: message,
+  // })
+  $: if (isChecked == true && errors.length == 0) maySendMail = true;
 
   // function checkForm(e) {
   //   if (this.email && this.msgTitle && this.message) return true;
@@ -74,32 +88,29 @@
     <!--IconInput(width='w-full' label='Prénom: ' prependIcon='fas fa-user' appendIcon='appendIcon' v-model='firstname' )-->
     <!--p() {firsname}-->
     <fieldset>
-    <div class="row">
-      <div class="col">
-        <legend>persona</legend>
-        <IconInput name={lastname} label="nom: " />
-        <IconInput name={firstname} label="prénom: " />
-        <IconInput type="email" name={email} label="entrez votre email" />
-        
-      </div>
-      <div class="col">
-        <legend>entreprise</legend>
-        <IconInput name={societyName} label="raison sociale" />
-        <IconInput name={societyUrl} label="adresse url de l'entreprise" />
-        <!-- <div class="d-flex">
+      <div class="row">
+        <div class="col">
+          <legend>persona</legend>
+          <IconInput name={lastname} label="nom: " />
+          <IconInput name={firstname} label="prénom: " />
+          <IconInput type="email" name={email} label="entrez votre email" />
+        </div>
+        <div class="col">
+          <legend>entreprise</legend>
+          <IconInput name={societyName} label="raison sociale" />
+          <IconInput name={societyUrl} label="adresse url de l'entreprise" />
+          <!-- <div class="d-flex">
         </div> -->
-        
+        </div>
       </div>
-    </div>
-  </fieldset >
-  
-  
-  <!-- <div class="d-flex">
+    </fieldset>
+
+    <!-- <div class="d-flex">
   </div> -->
-  <!-- <div class="row"> -->
-  <fieldset>
-        <legend>Message</legend>
-        <textarea
+    <!-- <div class="row"> -->
+    <fieldset>
+      <legend>Message</legend>
+      <textarea
         class="rounded-lg py-1 px-3"
         name="message"
         rows="2"
@@ -108,9 +119,9 @@
           message = event.target.value;
         }}
         required>Entrez votre message</textarea>
-        
+
       <!-- </div> -->
-        <!-- <div class="row"> -->
+      <!-- <div class="row"> -->
       <legend>Confirmation</legend>
       <CheckBox
         iSwear="Je certifie la conformité des données ci-jointes"
@@ -118,19 +129,23 @@
           isChecked != isChecked;
         }}
         class="my-4" />
-        
-        <legend>Opérations</legend>
-        <div class="btn-group">
-          <SubmitButton on:check(handleForm) />
-          <button class="btn btn-warning" on:click={resetForm}>recommencer</button>
-          <a href="." class="btn btn-danger">annuler</a>
-        </div>
-      </fieldset>
-    </form>
-    <hr>
-    champs {#each mailForm as field}
-      <p>{field}</p>
-      {/each} <br>
-      longueur {mailForm.length}
-</div>
 
+      <legend>Opérations</legend>
+      <div class="btn-group">
+        <SubmitButton on:check(handleForm) />
+        <button
+          class="btn btn-warning"
+          on:click={resetForm}>recommencer</button>
+        <a href="." class="btn btn-danger">annuler</a>
+      </div>
+    </fieldset>
+  </form>
+  <hr />
+  champs
+  {#each mailForm as field}
+    <p>{field}</p>
+  {/each}
+  <br />
+  longueur
+  {mailForm.length}
+</div>
