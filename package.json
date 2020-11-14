@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "fabric-io",
+  "description": "développement web frontend",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",

@@ -1,8 +1,20 @@
+<!-- <script context="module" >
+  // function toggleNavbar (
+    
+    // ) {
+      //   return open != open
+      // }
+      
+    </script> -->
+
 <script>
   // import { link } from "fs";
   import { navbarLinks } from "../store/links";
   import Clock from "./Clock.svelte";
   export let segment;
+  // export let open
+  let open = false;
+  // export let toggleNavbar
 </script>
 
 <style>
@@ -53,7 +65,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-lg sticky-top">
   <a class="navbar-brand" href=".">Fabric.io</a>
+  <div>{open}</div>
   <button
+    on:click={() => { open = !open}}
     class="navbar-toggler"
     type="button"
     data-toggle="collapse"
@@ -64,7 +78,7 @@
     <span class="navbar-toggler-icon" />
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="text-center navbar-collapse collapse {open ? 'show' : ''} " id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto ">
       <!-- <li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Accueil</a></li> -->
       {#each navbarLinks as link}
@@ -88,7 +102,10 @@
     </ul>
     
     <div>
-      <Clock />
+      <div id="clock" class="collapse {open ? '' : 'show'}">
+        <Clock />
+
+      </div>
 
       <!-- <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
