@@ -1,6 +1,6 @@
 // import PortfolioService from '@/services/PortfolioService.js'
 
-const path = "img/portfolio/"
+const path = "images/portfolio/"
 const portfolio= [
     {
       id: '1',
