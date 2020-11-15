@@ -27,7 +27,7 @@ export async function preload({ params }) {
 
 
 <!-- <div class="container"> -->
-	<HeadTitle title={folio.name} />
+	<HeadTitle title="Portfolio" detail={folio.name} />
 	<!-- <h1 class="text-center mb-4">{folio.name}</h1> -->
 	<!-- <div class="row py-4">
 		<div class="col-md-6 col-sm-12"> -->

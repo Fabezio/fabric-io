@@ -4,12 +4,17 @@
 
   export let title
   export let subtitle = ""
-  const name = "fabric.io"
+  export let detail = ""
+  const name = "fabric-io"
 
 </script>
 
 <svelte:head>
+  {#if detail}
+  <title>{name} | {title} | {detail}</title>
+  {:else}
   <title>{name} | {title} </title>
+  {/if}
 </svelte:head>
 <div class="text-center mt-5 mb-4">
   <h1>{title}</h1>

@@ -64,7 +64,7 @@
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow sticky-top">
-  <a class="navbar-brand" href=".">Fabric.io</a>
+  <a class="navbar-brand display-4 text-uppercase" href=".">fabric-io</a>
   <!-- <div>{open}</div> -->
   <button
     on:click={() => { open = !open}}
