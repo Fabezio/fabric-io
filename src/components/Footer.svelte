@@ -26,7 +26,7 @@
   #margin {
     display: block;
     width: 100%;
-    height: 12rem;
+    height: 10rem;
   }
 </style>
 
@@ -35,12 +35,12 @@
 <footer class="{bgColor} px-1 py-2 text-white inset-x-0 fixed-bottom mt-5">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col">
         {#each footerLinks as link}
           <a class="d-block" href="footer-info/{link.route}">{link.name}</a>
         {/each}
       </div>
-      <div class="col-lg-6">
+      <div class="col">
         <h6 class="footertext pb-2" cols="12">
           <div class="center-text">
             <a title="voir le code source?" href="https://github.com/Fabezio/fabric-io.git">
