@@ -11,7 +11,7 @@
 
 <script>
   import HeadTitle from "../../components/UI/HeadTitle.svelte";
-  import Card from "../../components/UI/Card.svelte";
+  import Card from "../../components/UX/Card.svelte";
   export let portfolio;
 </script>
 

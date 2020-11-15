@@ -2,7 +2,7 @@
   import HeadTitle from "../components/UI/HeadTitle.svelte";
   import IconInput from "../components/forms/IconInput.svelte";
   import IconTextarea from "../components/forms/IconTextarea.svelte";
-  import ActionButton from "../components/forms/ActionButton.svelte";
+  import ActionButton from "../components/UX/ActionButton.svelte";
   import SubmitButton from "../components/forms/SubmitButton.svelte";
   import CheckBox from "../components/forms/CheckBox.svelte";
 

@@ -5,5 +5,4 @@
 </div>
 
 <script>
-export default {}
 </script>

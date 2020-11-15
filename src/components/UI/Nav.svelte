@@ -9,7 +9,7 @@
 
 <script>
   // import { link } from "fs";
-  import { navbarLinks } from "../store/links";
+  import { navbarLinks } from "../../store/links";
   import Clock from "./Clock.svelte";
   export let segment;
   // export let open

@@ -1,8 +1,8 @@
 <script>
   // import { link } from "fs";
 
-  import { footerLinks } from "../store/links";
-  import { socialNetworks } from "../store/social";
+  import { footerLinks } from "../../store/links";
+  import { socialNetworks } from "../../store/social";
   export let bgColor = "bg-info";
   // import IconStack from '@/components/IconStack'
   // export default {

@@ -1,5 +1,5 @@
 <script>
-  import SkillStack from "../components/SkillStack.svelte";
+  import SkillStack from "../components/UX/SkillStack.svelte";
   import {codes} from "../store/skills"
   // const codes2 = [
   //   {
