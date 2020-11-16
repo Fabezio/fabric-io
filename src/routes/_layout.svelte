@@ -3,6 +3,7 @@
 	import Footer from '../components/UI/Footer.svelte';
 
 	export let segment;
+	const logo = "images/fabric-io.png";
 </script>
 
 <style>
@@ -16,10 +17,10 @@
 	} */
 </style>
 
-<Nav {segment}/>
+<Nav {segment} {logo} /> 
 
 <main class="container">
-	<slot></slot>
+	<slot {logo}></slot>
 </main>
 
 <Footer />

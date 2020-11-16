@@ -1,17 +1,10 @@
-<!-- <script context="module" >
-  // function toggleNavbar (
-    
-    // ) {
-      //   return open != open
-      // }
-      
-    </script> -->
-
+<!--<script context="module"  ✂prettier:content✂="CiAgLy8gZnVuY3Rpb24gdG9nZ2xlTmF2YmFyICgKICAgIAogICAgLy8gKSB7CiAgICAgIC8vICAgcmV0dXJuIG9wZW4gIT0gb3BlbgogICAgICAvLyB9CiAgICAgIAogICAg" ✂prettier:content✂="e30=">{}</script>-->
 <script>
   // import { link } from "fs";
   import { navbarLinks } from "../../store/links";
   import Clock from "./Clock.svelte";
   export let segment;
+  export let logo;
   // export let open
   let open = false;
   // export let toggleNavbar
@@ -64,10 +57,15 @@
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow sticky-top">
-  <a class="navbar-brand display-4 text-uppercase" href=".">fabric-io</a>
+  <a class="navbar-brand display-4 text-uppercase" href="."><img
+      src={logo}
+      alt="logo"
+      height="24" class="mr-2"/>fabric-io</a>
   <!-- <div>{open}</div> -->
   <button
-    on:click={() => { open = !open}}
+    on:click={() => {
+      open = !open;
+    }}
     class="navbar-toggler"
     type="button"
     data-toggle="collapse"
@@ -78,12 +76,16 @@
     <span class="navbar-toggler-icon" />
   </button>
 
-  <div class="text-center navbar-collapse collapse {open ? 'show' : ''} " id="navbarSupportedContent">
+  <div
+    class="text-center navbar-collapse collapse {open ? 'show' : ''} "
+    id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto ">
       <!-- <li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Accueil</a></li> -->
       {#each navbarLinks as link}
         <li
-        on:click={() => {open = false}}
+          on:click={() => {
+            open = false;
+          }}
           class="nav-item text-uppercase font-weight-light {segment === link.route || (segment == undefined && link.route == '') ? 'active' : ''}">
           {#if link.prefetch}
             <a
@@ -98,14 +100,11 @@
         </li>
       {/each}
       <!-- <li>{segment}</li> -->
-
-      
     </ul>
-    
+
     <div>
       <div id="clock" class="collapse {open ? '' : 'show'}">
         <Clock />
-
       </div>
 
       <!-- <form class="form-inline my-2 my-lg-0">

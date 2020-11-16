@@ -2,7 +2,8 @@
   // import successkid from "images/successkid.jpg";
   import HeadTitle from "../components/UI/HeadTitle.svelte";
   // import Header from "../components/UI/HeadTitle.svelte";
-  const idpict = "img/face_co.png";
+  const idpict = "images/face_co.png";
+  const logo = "images/fabric-io.png";
 </script>
 
 <style>
@@ -29,8 +30,10 @@
     /* margin: 0 0 1em 0; */
   }
   #logo {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
+    /* max-width: 200px;
+    max-height: 200px; */
   }
 
   /* p {
@@ -57,16 +60,19 @@
     <img
       id="logo"
       class="w-auto rounded-lg rounded-bl   "
+      src={logo}
+      alt="Logo du site" />
+    <!-- <img
+      id="logo"
+      class="w-auto rounded-lg rounded-bl   "
       src={idpict}
-      alt="photo de l'auteur" />
+      alt="photo de l'auteur" /> -->
     <div
       class="bg-white rounded-b p-4 flex flex-col justify-around leading-normal lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r">
       <div class="flex flex-col">
         <h1 class="my-0 text-left ">fabric-io</h1>
-        <h2 class="my-0 text-center lg:text-left">
-          Développeur Web FrontEnd spécialisé JS
-        </h2>
-        <!-- <p class="mt-2 text-xl">Je code pour vous</p> -->
+        <h2 class="my-0 text-left ">Développement Web</h2>
+        <p class="mt-2 ">On code pour vous</p>
       </div>
     </div>
   </div>
@@ -89,8 +95,8 @@
           target="_blank">ma page github</a>, afin de vous forger votre propre
         avis. N'hésitez pas à tester plus avant mes acquis, me faire un retour
         <a class="" href="mailto:fabezio@outlook.fr">par mail</a>
-        et/ou émettre des suggestions (c'est également grâce aux erreurs qu'on apprend et
-        progresse).
+        et/ou émettre des suggestions (c'est également grâce aux erreurs qu'on
+        apprend et progresse).
       </p>
       <p>Sur ce, je vous souhaite une bonne visite!</p>
     </main>
