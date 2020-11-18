@@ -1,9 +1,13 @@
 <script>
   // import { link } from "fs";
-
+  import {onMount} from 'svelte'
   import { footerLinks } from "../../store/links";
   import { socialNetworks } from "../../store/social";
   export let bgColor = "bg-info";
+  let lastMod
+  onMount(() => {
+    lastMod = document.lastModified
+  })
   // import IconStack from '@/components/IconStack'
   // export default {
   //   name: 'Footer',
@@ -48,7 +52,7 @@
             </a>
             &copy;
             {new Date().getFullYear()}
-            <i>- tous droits réservés</i>
+            <i> - Mise à jour: {lastMod}</i>
           </div>
         </h6>
         <div class="d-flex">
