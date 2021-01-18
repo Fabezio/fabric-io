@@ -37,7 +37,7 @@
             <h3>{card.name}</h3>
             <p class="font-light text-left">{card.desc}</p>
             <p class="text-muted version font-light text-gray-500 text-left">
-              version:
+              version actuelle:
               {card.version}
             </p>
           </div>

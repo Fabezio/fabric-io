@@ -40,24 +40,24 @@ export const codes= [
       content: [
         {
           name: 'Bootstrap',
-          version: 4.3,
+          version: '5.0.0 (beta)',
           img:
             'http://www.dxpdance.com.au/wp-content/uploads/2016/03/bootstrap-logo.jpg',
           desc: 'Framework CSS facilitant la mise en forme, bibliothèque Sass',
         },
         {
           name: 'Bulma',
-          version: '0.8',
+          version: '0.9.1',
           img: 'https://jgthms.com/web-design-in-4-minutes/bulma.png',
           desc: 'Framework semblable à BootStrap, bibliothèque Sass',
         },
-        {
-          name: 'Vuetify',
-          version: '2.0',
-          img:
-            'https://external-preview.redd.it/AOJtwr7lW8E4k5rsua3rPoky1ySO_34UkAVmm6PuVpM.jpg?auto=webp&s=2645657b4d14ff6f7321db22bcb96f4652876af8',
-          desc: 'Framework semblable à BootStrap, bibliothèque Sass',
-        },
+        // {
+        //   name: 'Vuetify',
+        //   version: '2.0',
+        //   img:
+        //     'https://external-preview.redd.it/AOJtwr7lW8E4k5rsua3rPoky1ySO_34UkAVmm6PuVpM.jpg?auto=webp&s=2645657b4d14ff6f7321db22bcb96f4652876af8',
+        //   desc: 'Framework semblable à BootStrap, bibliothèque Sass',
+        // },
         {
           name: 'Tailwind',
           version: '1.x',
@@ -66,6 +66,26 @@ export const codes= [
           desc: 'librairie utilitaire css',
         },
       ],
+    },
+    {
+      title: "Gestionnaires de contenus (CMS)",
+      content: [
+        {
+          name: 'WordPress',
+          img:
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1200px-WordPress_blue_logo.svg.png',
+          version: 5.6,
+          desc: 'Application de création de site web en ligne, efficace et professionnel',
+        },
+        {
+          name: 'WooCommerce',
+          img:
+            'https://seeklogo.com/images/W/woocommerce-logo-1E4D00A887-seeklogo.com.png',
+          version: 4,
+          desc: 'Extension dédiée au e-commerce, compatible avec WordPress',
+        },
+
+      ]
     },
     {
       title: 'Rendu',
@@ -95,11 +115,11 @@ export const codes= [
         },
         {
           name: 'Svelte JS',
-          version: '3.0',
+          version: '3.31.2',
           img:
             'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1200px-Svelte_Logo.svg.png',
           desc:
-            "Framework js dont les fonctionnalités s'appuient sur la compilation",
+            "Framework JS extrêmement léger, dont les fonctionnalités s'appuient sur la compilation",
         },
         {
           name: 'Sapper',
@@ -138,6 +158,7 @@ export const codes= [
         },
       ],
     },
+    
     {
       title: 'Autres',
       content: [
@@ -145,19 +166,19 @@ export const codes= [
           name: 'Git',
           img:
             'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/768px-Git_icon.svg.png',
-          version: 2.23,
+          version: "2.29.2",
           desc: 'Application servant à versionner ses codes',
         },
         {
           name: 'GitHub',
           img:
             'https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/GITHUB-512.png',
-          version: 2.23,
+          version: "2.29.2",
           desc: 'Un cloud pour les codeurs, basé sur git',
         },
         {
           name: 'Python',
-          version: 3.8,
+          version: "3.9.1",
           img:
             'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png',
           desc:
@@ -173,7 +194,7 @@ export const codes= [
 
         {
           name: 'bash',
-          version: '5.0',
+          version: '5.0.17',
           img:
             'https://cdn3.brettterpstra.com/uploads/2015/02/terminal-longshadow.png',
           desc: 'Langage de scripts, largement utilisé sous Linux',
