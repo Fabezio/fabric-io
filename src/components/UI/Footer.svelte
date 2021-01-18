@@ -52,7 +52,7 @@
             </a>
             &copy;
             {new Date().getFullYear()}
-            <i> - Mise à jour: {lastMod}</i>
+            
           </div>
         </h6>
         <div class="d-flex">
