@@ -118,7 +118,8 @@
         on:input={(event) => {
           message = event.target.value;
         }}
-        required>Entrez votre message</textarea>
+        placeholder="entrez votre message ici"
+        required></textarea>
 
       <!-- </div> -->
       <!-- <div class="row"> -->
@@ -141,11 +142,11 @@
     </fieldset>
   </form>
   <hr />
-  champs
+  <!-- champs
   {#each mailForm as field}
     <p>{field}</p>
   {/each}
   <br />
   longueur
-  {mailForm.length}
+  {mailForm.length} -->
 </div>

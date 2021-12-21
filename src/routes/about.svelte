@@ -11,8 +11,8 @@
       En réalisant la puissance du codage, je ne fus pas long à décider de suivre une longue et fastidieuse (mais Ô combien passionnante) formation de développement web, option FrontEnd, avant de m'essayer au Backend. Déçu par PHP (notamment à cause de certaines faiblesses), je m'orientai vers le
       <b><i>tout JavaScript</i></b>. NodeJS est prévu pour plus tard.
     </p>
-    <p>Convaincu par la supériorité de Linux, je testai des distributions de diverses familles: Ubuntu, Mint, Manjaro, Fedora et enfin Debian, cette dernière étant réputée pour sa stabilité.</p>
-    <p>J'adoptai également Mac, fin 2019, pour pouvoir tirer parti de sa puissance et sa fluidité.</p>
+    <p>Convaincu par la supériorité <i>sine qua non</i> de Linux, je testai des distributions de diverses familles: Ubuntu, Mint, Debian, MX, Manjaro, pour enfin me fixer avec Fedora.</p>
+    <p>J'adoptai également Mac fin 2019, pour pouvoir tirer parti de sa puissance et sa fluidité.</p>
     <p>
       Depuis, plus je code, plus je cherche, plus je prends de plaisir. J'utilise
       <b>Visual Studio Code</b>

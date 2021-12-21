@@ -2,7 +2,7 @@
 <div class="my-4 mx-auto items-center">
   <!-- <input type={type} class="  border border-dark rounded-pill" id={name} this:bind={name} placeholder="{label}" cols="100"  required="required" /> -->
   <input type={type} class=" py-1 px-3 border border-dark rounded-pill" id={name} on:input={(event) => {name= event.target.value}} placeholder="{label}"   />
- <p class="text">{name}</p>
+ <!-- <p class="text">{name}</p> -->
 </div>
 
 <script>
